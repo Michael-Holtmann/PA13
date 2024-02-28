@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Die
+comment1.params=
+comment1.target=Die()
+comment2.params=f
+comment2.target=Die(int)
+comment3.params=
+comment3.target=int\ getFace()
+comment4.params=
+comment4.target=void\ roll()
+comment5.params=
+comment5.target=void\ flip()
+comment6.params=x
+comment6.target=boolean\ equals(Die)
+comment7.params=x
+comment7.target=int\ compareTo(Die)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9
