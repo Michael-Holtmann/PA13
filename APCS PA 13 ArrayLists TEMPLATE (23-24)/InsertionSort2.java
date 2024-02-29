@@ -32,21 +32,32 @@ public class InsertionSort2
     
     // CHANGE THIS TO WORK WITH ARRAYLISTS AS DESCRIBED.
     
-    public static void insertionSort( double[] x)
-    {
-         for( int i=1; i < x.length; i++) // index i is value to insert
-         {
-             double temp = x[i];  // save current value being inserted
-             
-             int j = i-1;      // j is current index into sorted array
-             while( j>=0 && x[j] > temp )
-             {
-                 x[j+1] = c[j];
-                 j--;
-             }
-             x[j+1] = temp;
-         }
+  public static void insertionSort( ArrayList<Double> arr)
+  {
+    int key = 0; // indexes
+    double control = 0; // element
+    double temp = 0; // switched element
+    int track = 0;
+
+    for (int i = 1; i < arr.size(); i++) {
+      key = i;
+      control = arr.get(i);
+
+      while (key > 0 && control < arr.get(key - 1)) {
+        if (control < arr.get(key - 1)) {
+          temp = arr.get(key - 1);
+          arr.set(key, temp);
+          arr.set(key - 1, control);
+          key--;
+          track++;
+
+          System.out.println("Pass " + track + ":");
+          System.out.println(arr);
+          System.out.println("\n");
+        }
+      }
     }
+  }
     
     /**
      *  printArray -  Display an double array of "size" items as a single line
