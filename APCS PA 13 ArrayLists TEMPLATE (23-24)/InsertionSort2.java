@@ -30,8 +30,6 @@ public class InsertionSort2
      * @return a array sorted in increasing order.
      */
     
-    // CHANGE THIS TO WORK WITH ARRAYLISTS AS DESCRIBED.
-    
   public static void insertionSort( ArrayList<Double> arr)
   {
     int key = 0; // indexes

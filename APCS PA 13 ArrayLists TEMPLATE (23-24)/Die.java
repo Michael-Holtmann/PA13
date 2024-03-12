@@ -1,4 +1,4 @@
-m Die.java
+
 public class Die
 {
     private int face;
