@@ -32,7 +32,17 @@ public class RemoveDuplicates
    
    public static void removeDuplicates( ArrayList<Die> x )
    {
-       
+
+     for (int i = 0; i < x.size() - 1; i++) {
+       Die currentDie = x.get(i);
+       for (int j = i + 1; j < x.size(); j++) {
+         Die nextDie = x.get(j);
+         if (currentDie.equals(nextDie)) {
+             x.remove(j); 
+             j--; 
+         }
+       }
+     }
    }
     
    
